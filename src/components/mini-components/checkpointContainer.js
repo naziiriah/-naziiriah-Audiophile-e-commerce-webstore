@@ -6,7 +6,7 @@ import { GearContext } from "../../context/Context";
 
 
 const ParcelUpgrade = ({ value, id }) => {
-  const [Items, purchased, Total, SetTotal] = useContext(GearContext)
+  const [Items, purchased, Total] = useContext(GearContext)
     return ( 
         <Box>
             {

@@ -17,7 +17,7 @@ import { FaMinus } from "react-icons/fa";
 
 const Products = () => {
 
-  const [Items, purchased, Total, SetTotal] = useContext(GearContext)
+  const [Items, purchased, Total] = useContext(GearContext)
   const [value, setValue] = useState(1)
   const Location = useLocation()
   const History = useHistory()
@@ -72,7 +72,8 @@ const Products = () => {
                         textAlign = "center" textTransform="uppercase" letterSpacing="3px"
                         w ="200px" color = "#fff"
                         fontSize="16px" h="4.1rem" _hover={{cursor:'pointer', opacity:'0.7'}}
-                        onClick={() => (purchased.push({id :earphon.id, value:value, price:earphon.price}))}
+                        onClick={() => (purchased.push({id :earphon.id, value:value}),
+                                         Total.push(earphon.price * value) )}
                         
                         >add to cart</Button>
                       </Box>

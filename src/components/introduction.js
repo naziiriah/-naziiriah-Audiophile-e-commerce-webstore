@@ -9,10 +9,10 @@ import { useContext } from "react";
 
 const Introduction = (props) => {
 // displaying introductory content on package
-    const [items] = useContext(GearContext)
+    const [Items, purchased, Total] = useContext(GearContext)
     return ( <>
     {
-         items
+         Items
          .filter(gears => gears.name === props.DeviceName)
          .map(earphon => (
              <Box key ={earphon.id}>

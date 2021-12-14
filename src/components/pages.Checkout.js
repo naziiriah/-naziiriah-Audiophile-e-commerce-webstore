@@ -14,10 +14,13 @@ import ParcelUpgrade from "./mini-components/checkpointContainer";
 const Checkout = () => {
     const [value, SetValue] = useState(true)
     const Shipping = 50
-    const [purchased, Total ] = useContext(GearContext)
-    const  Vat = 0.2 * Total
-    const GrandTotal = Vat + Total + Shipping
+    const [Items, purchased, Total] = useContext(GearContext)
+    const total = Total.reduce( (a, b) => a + b)
+    const  Vat = 0.2 * total
+    const GrandTotal = Vat + total + Shipping
     const History = useHistory()
+
+    
     
 
     return (
@@ -150,7 +153,7 @@ const Checkout = () => {
                             {/* total price */}
                             <Box display="flex" justifyContent="space-between" my="1rem"> 
                             <Box as="h2" textTransform="uppercase" fontSize="20px">total</Box>
-                            <Box as ="h2" textTransform="uppercase" fontSize="20px" fontWeight="700">${Total}</Box>
+                            <Box as ="h2" textTransform="uppercase" fontSize="20px" fontWeight="700">${Total.reduce( (a, b) => a + b)}</Box>
                             </Box>
 {/* shipping price */}
                             <Box display="flex" justifyContent="space-between" my="1rem"> 

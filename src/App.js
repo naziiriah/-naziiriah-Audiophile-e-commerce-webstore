@@ -14,7 +14,7 @@ import Checkout from "./components/pages.Checkout";
 function App() {
   return ( 
     <Router>
-       <Container  w="90rem" maxW="1440" margin="auto" >
+       <Container  w={["100%"]} maxW="1440" margin="auto" >
           <Head/>
 
           <Switch>

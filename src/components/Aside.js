@@ -4,7 +4,7 @@ import image from "../components/assets/shared/desktop/image-best-gear.jpg"
 
 const Aside = () => {
     return ( 
-        <Box as ="aside" width="80%" height="40rem" display="flex"  justifyContent="space-between" margin="auto" marginTop="5rem">
+        <Box as ="aside" width={["100%","100%","90%","80%"]} height={["60rem", "80rem","40rem", "40rem"]} display="flex" flexDirection={["column", "column", "row", "row"]}  justifyContent="space-between" margin="auto" marginTop="5rem">
             <Box marginTop="6rem">
                 <Box as="h2" lineHeight=""
                 textTransform="uppercase" marginBottom="1.5rem"
@@ -17,7 +17,7 @@ const Aside = () => {
                 fantastic people who make Audiophile the best place to buy your portable audio equipment.
                 </Box>
             </Box>
-            <Image height="37rem" src={image} alt="enjoying music with our gears" />
+            <Image height="" src={image} alt="enjoying music with our gears" />
         </Box>
      );
 }

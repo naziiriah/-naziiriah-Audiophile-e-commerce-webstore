@@ -19,7 +19,7 @@ import Parcel from "./modalContainer"
 const BasicUsage = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const History= useHistory()
-    const [Items, purchased, Total, SetTotal] = useContext(GearContext)
+    const [Items, purchased, Total] = useContext(GearContext)
 
     return (
       <>
@@ -33,12 +33,12 @@ const BasicUsage = () => {
             </ModalHeader>
             <ModalCloseButton />
             { purchased.length === 0 ? <Box margin="auto" >Cart is empty</Box> : <Box margin="auto" width="90%">{
-              purchased.map(item => <Parcel value ={item.value} id={ item.id} price ={ item.price}/>)
+              purchased.map(item => <Parcel value ={item.value} id={ item.id} />)
             }</Box>}
             
             <Box display="flex" justifyContent="space-between" width="90%" margin="auto">
                 <Box as="h1" textTransform="uppercase" fontSize="23px" fontWeight="600"> total</Box>
-                <Box as="h1"  fontSize="23px" fontWeight="600">${Total}</Box>
+                {Total.length >= 1 && <Box as="h1"  fontSize="23px" fontWeight="600">${Total.reduce( (a, b) => a + b)}</Box>}
               </Box>
             <ModalFooter>
              {purchased.length === 0? " " :  <Button colorScheme="orange" textTransform="uppercase" fontWeight="Bold"

@@ -3,8 +3,8 @@ import { useContext } from "react";
 import { GearContext } from "../context/Context";
 import { Image } from "@chakra-ui/image";
 
-const Parcel = ({ value, id, }) => {
-  const [Items, purchased, Total, SetTotal] = useContext(GearContext)
+const Parcel = ({ value, id }) => {
+  const [Items, purchased, Total] = useContext(GearContext)
     
 
     return ( 
