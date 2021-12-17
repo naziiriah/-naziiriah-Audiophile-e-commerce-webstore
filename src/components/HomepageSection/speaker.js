@@ -6,16 +6,21 @@ import Buttons from "../mini-components/Button";
 
 const SectionSpeaker = () => {
     return ( 
-            <Box as ="section" width="80%" margin="auto" borderRadius="7px" marginTop="4rem" height="35rem" bgColor="#D87D4A" display="flex" justifyContent="space-around">
-                <Image src={ imageSpeaker } width="20rem" mt="7.2rem" height="28rem" alt="speaker-model-zx9"/>
-                <Box as="p" mt="8.2rem" width="23rem">
-                    <Box as ="h1" fontSize="60px" color="#fff" width="18rem" fontWeight="550" textTransform="uppercase" lineHeight="70px">
+            <Box as ="section" width={["100%","90%","80%","80%"]} margin="auto" borderRadius="7px" marginTop="4rem" height={["80rem","35rem","35rem","35rem"]} bgColor="#D87D4A" display="flex" flexDirection={["column", "row", "row", "row"]} justifyContent="space-around">
+                <Box width={["90%","45%","45%","45%"]} margin="auto">
+                <Image src={ imageSpeaker } width="20rem" mt="7.2rem" height="28rem" alt="speaker-model-zx9"/> 
+                </Box>
+                
+                <Box as="p" mt="8.2rem" width={["90%","45%","45%","45%"]} margin="auto">
+                    <Box as ="h1" fontSize="60px" color="#fff" width="18rem" textAlign="center" fontWeight="550" textTransform="uppercase" lineHeight="70px">
                         zx9 speaker
                     </Box>
-                    <Box as="p" width="100%" color="#f1f1f1" mt="2rem" lineHeight="30px" fontSize="20px">
+                    <Box as="p" width="90%" margin="auto" color="#f1f1f1" mt="2rem" lineHeight="30px" fontSize="20px">
                         Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound
                     </Box>
-                    <Buttons text = "see products" color="#000" stateName="ZX9 Speaker"/>
+                    <Box width={["70%","90%","80%","80%"]} margin="auto" my="2rem">
+                    <Buttons text = "see products"  color="#000" stateName="ZX9 Speaker"/>
+                    </Box>
                 </Box>
             </Box>
      );

@@ -9,6 +9,7 @@ export const GearProvider = (props) => {
 // imports the large data accesible to its children elements
     const purchase= []
     const Total = []
+    
     return(
         <GearContext.Provider value = {[Items, purchase, Total]}>
             {props.children}

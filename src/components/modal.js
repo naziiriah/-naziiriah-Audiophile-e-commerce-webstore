@@ -9,11 +9,13 @@ import {
   useDisclosure, 
   Button,
   Box,
-  Icon
+  Icon,
+  Text
 } from "@chakra-ui/react"
 import { useContext } from "react"
 import { GearContext } from "../context/Context"
 import { FaCartPlus } from 'react-icons/fa'
+
 import Parcel from "./modalContainer"
 
 const BasicUsage = () => {
@@ -24,14 +26,23 @@ const BasicUsage = () => {
     return (
       <>
         
-      <Icon as={FaCartPlus} onClick={onOpen}/>
+      <Icon as={FaCartPlus} onClick={onOpen} _hover={{cursor:"pointer", color:"#D87D4A"}}/>
         <Modal isOpen={isOpen} onClose={onClose} size="sm">
           <ModalOverlay />
           <ModalContent>
-            <ModalHeader display="flex">
-              cart({purchased.length})
+            <ModalHeader display="flex" justifyContent="space-between">
+              <Box>
+                cart({purchased.length})
+              </Box>
+              <Text _hover={{cursor:"pointer", color:"#D87D4A"}}
+              onClick={() => {
+                Total.splice(0, Total.length)
+                purchased.splice(0, purchased.length)
+              }}
+              >Remove all</Text>
+
             </ModalHeader>
-            <ModalCloseButton />
+            
             { purchased.length === 0 ? <Box margin="auto" >Cart is empty</Box> : <Box margin="auto" width="90%">{
               purchased.map(item => <Parcel value ={item.value} id={ item.id} />)
             }</Box>}
@@ -45,7 +56,6 @@ const BasicUsage = () => {
               width="95%" margin="auto" textAlign="center"  onClick={()=> ( History.push('/checkout')) }>
                 checkout
               </Button>}
-              
             </ModalFooter>
           </ModalContent>
         </Modal>

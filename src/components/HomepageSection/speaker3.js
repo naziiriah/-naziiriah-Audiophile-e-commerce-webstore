@@ -8,11 +8,12 @@ const SectionSpeaker3 = () => {
     return (
         // third images of main page
         <Box as="section"  margin='auto'  marginTop="4rem"display="flex" 
-        justifyContent="space-between" width="80%" height="25rem">
-            <Image src={ earbud }  height="20rem"/>
-            <Box width="34rem" height="20rem" bgColor="#f1f1f1">
-                <Box as ="h2" fontSize="45px" color="#000" width="20rem" pos="relative" top="3rem" left="8rem" fontWeight="550" textTransform="uppercase" lineHeight="70px">yx1 earphone</Box>
-                <Box pos="relative" top="2rem" left="10rem"> <Buttons text="see products" color="#000" stateName="YX1 Wireless Earphones"/> </Box>
+        flexDirection={["column", "row", "row","row"]}
+        justifyContent="space-between" width={["100%","90%","80%","80%"]} height="45rem">
+            <Image src={ earbud } width={["100%","50%","50%","50%"]}  height="30rem"/>
+            <Box width={["100%","90%","80%","80%"]} height={["40rem", "30rem", "30rem","30rem"]} bgColor="#f1f1f1">
+                <Box as ="h2" fontSize="45px" color="#000" width="100%"  marginY="4rem" textAlign="center" fontWeight="550" textTransform="uppercase" lineHeight="70px">yx1 earphone</Box>
+                <Box margin="auto" width="50%"> <Buttons text="see products" color="#000" stateName="YX1 Wireless Earphones"/> </Box>
             </Box>
         </Box>
       );
