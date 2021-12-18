@@ -10,7 +10,7 @@ const ProductSection = () => {
     const History = useHistory()
     return (
         <Box as="section" 
-        display="flex" h={["90rem", "90rem", "500", "500"]}  w={["90%","90%", "100%","100%"]} 
+        display="flex" h={["70rem", "70rem", "500", "500"]}  w={["90%","90%", "100%","100%"]} 
         flexDirection={["column", "row", "row", "row"]}
         bgColor="#fff"
         margin="auto">

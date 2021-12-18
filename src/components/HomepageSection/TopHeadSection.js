@@ -24,7 +24,7 @@ const TopHeadSection = () => {
                         building quality made for the passionate music
                         enthusiast.
                     </Box>
-                    <Buttons text = "see product"color="#D87D4A" stateName="XX99 Mark II Headphones"/>
+                    <Buttons  text = "see product"color="#D87D4A" stateName="XX99 Mark II Headphones"/>
                 </Box>
                 
             </Box>

@@ -82,7 +82,7 @@ const Products = () => {
                   </Box>
                   </Box>
 {/* Features description */}
-                <Box as="section"  height={["97rem", "40rem", "40rem","40rem"]}  display="flex" flexDirection={["column", "column", "column", "row"]} justifyContent="space-between" width ="80%" margin=" auto" my="3rem">
+                <Box as="section"  height={["67rem", "67rem", "40rem","40rem"]}  display="flex" flexDirection={["column", "column", "column", "row"]} justifyContent="space-between" width ="80%" margin=" auto" my="3rem">
                   <Box  width={["100%","100%","100%","47%"]} >
                     <Box as="h2" fontSize={["23px", "33px", "33px", "33px"]}  fontWeight="600" textTransform="uppercase">Features</Box>
                     <Box as ="p" lineHeight="33px" fontSize="20px" marginTop="1.4rem" marginBottom="1rem" > {earphon.features}</Box>

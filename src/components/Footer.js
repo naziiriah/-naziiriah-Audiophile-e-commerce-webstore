@@ -15,21 +15,20 @@ const Footer = () => {
                             <Link to="/earphones"> <Box as="li" fontSize="15" textTransform="uppercase"  textAlign="center" mx="15px" my="1rem" _active={{ color: "#D87D4A" }} _hover= {{  cursor:"pointer", color: "#D87D4A"}}>earphones</Box> </Link>
                     </Box>
                 </Box>
-                <Box width="100%" height="20rem" marginTop="4rem" display="flex" flexDirection={["column", "row", "row" ,"row"]} justifyContent="space-between">
-                    <Box width={["100%", "50%", "50%", "50%"]} height="100%" fontSize="18px" fontWeight="400" lineHeight="26px" color="grey" >
+                <Box width="100%" height="20rem" marginTop="4rem" display="flex" flexDirection={["column", "column", "row" ,"row"]} justifyContent="space-between">
+                    <Box width={["100%", "100%", "50%", "50%"]} height="100%" fontSize="18px" fontWeight="400" lineHeight="26px" color="grey" textAlign="center" >
                     Audiophile is an all in one stop to fulfill your audio needs.
                      We're a small team of music lovers and sound specialists 
                      who are devoted to helping you get the most out of personal audio.
                      Come and visit our demo facility - we’re open 7 days a week.
-                     <Box as="p" marginTop="6rem">Copyright 2021. All Rights Reserved</Box>
+                     <Box as="p" marginTop="6rem" textAlign="center">Copyright 2021. All Rights Reserved</Box>
                     </Box>
-                    <Box margin={["auto", ".1rem", ".1rem", ".1rem" ]} marginTop={["7rem", ".1rem", ".1rem", ".1rem" ]} >
+                    <Box margin={["auto", "auto", ".1rem", ".1rem" ]} marginTop={["7rem", "7rem", ".1rem", ".1rem" ]} >
                         <Icon as ={ TiSocialFacebook } fontSize="1.2rem" _hover={{color:"#D87D4A", cursor:"pointer"}}/>
                         <Icon as ={ TiSocialTwitter }  fontSize="1.2rem" mx="1rem" _hover={{color:"#D87D4A", cursor:"pointer"}}/>
                         <Icon as ={ TiSocialInstagram } fontSize="1.2rem" _hover={{color:"#D87D4A", cursor:"pointer"}}/>
                     </Box>
                 </Box>
-                
             </Box>
         </Box>
      );
