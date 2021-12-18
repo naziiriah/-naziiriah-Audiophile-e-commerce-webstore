@@ -21,13 +21,9 @@ const ParcelUpgrade = ({ value, id }) => {
                             <Box>${item.price}</Box>
                         </Box>
                         </Box>
-                        
-                        
                         <Box width="2rem" height="2rem" paddingTop=".3rem" paddingLeft=".7rem" bgColor="#f3f3f3"  fontWeight="700">
                           {value}
                         </Box>
-                          
-                      
                         </Box>
                         </>
                   ) )
