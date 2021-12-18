@@ -12,7 +12,7 @@ const TopSection = (props) => {
                 { props.new && <Box as="h3"color="#D87D4A" fontSize="20px" marginTop="3rem" textTransform="uppercase" letterSpacing="8px"> new product</Box>}
                 <Box as ="h1" fontSize="36px" fontWeight="600" my=".5rem" textTransform="uppercase" letterSpacing="4px" >{props.name}</Box>
                 <Box as ="p" fontSize="20px" >{props.description}</Box>
-                <Buttons color="#D87D4A" tColor="#fff" text="see products" stateName={props.name}/>       
+                <Box margin={["auto", "auto", "0", "0"]} width="15rem"><Buttons color="#D87D4A" tColor="#fff" text="see products"  stateName={props.name}/>   </Box>    
             </Box>
         </Box>
      );
