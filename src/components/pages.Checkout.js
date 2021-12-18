@@ -155,7 +155,7 @@ const Checkout = () => {
                             <Box as="h2" textTransform="uppercase" fontSize="21px" fontWeight="600">summary</Box>
 {/* displayin contents purchased & number of items per item  */}
                             <Box>
-                            { purchased.length === 0 ? <Box margin="auto" >Cart is empty</Box> : <Box margin="auto" width="90%">{
+                            { purchased.length === 0 ? <Box margin="auto" >Cart is empty</Box> : <Box margin="auto" width="100%">{
                              purchased.map(item => <ParcelUpgrade value ={item.value} id={ item.id}/>)
                              }</Box>}
                             </Box>

@@ -35,11 +35,13 @@ const BasicUsage = () => {
                 cart({purchased.length})
               </Box>
               <Text _hover={{cursor:"pointer", color:"#D87D4A"}}
+              
               onClick={() => {
                 Total.splice(0, Total.length)
                 purchased.splice(0, purchased.length)
+                onClose()
               }}
-              >Remove all</Text>
+              >Remove all           </Text>
 
             </ModalHeader>
             
