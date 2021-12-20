@@ -13,7 +13,7 @@ const Speakers = () => {
 
     return ( 
 <Box> 
-                    <HeadSection text ="headphones"/>
+                    <HeadSection text ="speakers"/>
                     <Box as="article" width="100%">
                        <Introduction DeviceName = {DeviceOne} order={false}/>
                        <Introduction DeviceName = {Devicetwo} order={true}/>

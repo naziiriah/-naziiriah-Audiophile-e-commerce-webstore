@@ -11,7 +11,7 @@ const Earphones = () => {
         
     return ( 
         <Box> 
-            <HeadSection text ="headphones"/>
+            <HeadSection text ="earphones"/>
             <Box as="article" width="100%">
             <Introduction DeviceName = {DeviceOne} order={false}/>
             <ProductSection/>
