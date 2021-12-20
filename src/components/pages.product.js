@@ -58,14 +58,16 @@ const Products = () => {
                       <Box as="h3" my="1rem" fontWeight="700" fontSize={["23px", "33px", "33px", "33px"]} >${earphon.price}</Box>
                       <Box display="flex" flexDirection={["row", "row", "row", "row"]} width="100%"  height="10rem"justifyContent="space-between">
 {/* display for add cart button area */}
-                      <Box display="flex"  height="4rem" width={["50%","50%","50%","50%"]}  marginTop="3rem" marginRight="1rem" bgColor="#f3f3f3"  alignItems="center">
-                        <Box width="32%"  height="4.1rem" onClick={() => setValue(value-1)}>
+                      <Box display="flex"  height="4rem" width={["50%","50%","50%","50%"]}  marginTop="3rem" marginRight="1rem"   alignItems="center">
+                        { value > 1 && <Box width="32%" bgColor="#f3f3f3"  height="4.1rem" onClick={() => setValue(value-1)}>
                           <Icon as ={FaMinus}  margin="auto"my="1.5rem"  mx="2rem"/>
                         </Box>
-                        <Box width="32%" height="4.1rem" alignItems="center" >
-                          <Box my="1.5rem"  mx="2rem">{value}</Box>
+
+                        }
+                        <Box width="32%" bgColor="#f3f3f3" height="4.1rem" alignItems="center" >
+                          <Box my="1.4rem"  mx="2rem">{value}</Box>
                         </Box>
-                        <Box width="32%" height="4.1rem" alignItems="center" onClick={() => setValue(value+1)} >
+                        <Box width="32%" height="4.1rem" bgColor="#f3f3f3" alignItems="center" onClick={() => setValue(value+1)} >
                           <Icon my="1.5rem"  mx="2rem" as={IoMdAdd}/>
                         </Box>
                       </Box>
