@@ -24,7 +24,10 @@ const TopHeadSection = () => {
                         building quality made for the passionate music
                         enthusiast.
                     </Box>
+                    <Box  width="220px" margin={["auto", "auto", "0", "0"]}>
                     <Buttons  text = "see product"color="#D87D4A" stateName="XX99 Mark II Headphones"/>
+                    </Box>
+                    
                 </Box>
                 
             </Box>
