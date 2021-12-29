@@ -7,6 +7,7 @@ import Speakers from "./components/Page.Speaker";
 import Earphones from "./components/Page.Earphones";
 import Products from "./components/pages.product"
 import Checkout from "./components/pages.Checkout";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 
@@ -16,7 +17,7 @@ function App() {
     <Router>
        <Container  w={["100%"]} maxW="1440" margin="auto" >
           <Head/>
-
+        <ScrollToTop>
           <Switch>
 
             <Route exact path="/">
@@ -44,6 +45,7 @@ function App() {
             </Route>
             
           </Switch>
+          </ScrollToTop>
         </Container>
     </Router>
   );
